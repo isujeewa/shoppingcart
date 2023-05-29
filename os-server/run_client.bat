@@ -1,0 +1,2 @@
+@echo off
+start cmd /k java -jar "C:\Users\sujeewae\Documents\MSC\Distributed computing & concurrent\CW2\w1956493\Online Shopping Solution code\os-client\target\os-client-1.0.0-jar-with-dependencies.jar" StockServer03 s

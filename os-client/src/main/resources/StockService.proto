@@ -1,0 +1,45 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package os.backend.grpc.generated;
+
+message CheckStockRequest {
+  string itemId = 1;
+}
+
+message CheckStockResponse {
+  double balance = 1;
+}
+
+message GetAllStockRequest {
+}
+
+message GetAllStockResponse {
+  string items = 1;
+}
+
+message AddStockRequest {
+  string itemId = 1;
+  double value = 2;
+  bool isSentByPrimary = 3;
+}
+message DeductStockRequest {
+  string itemId = 1;
+  double value = 2;
+  bool isSentByPrimary = 3;
+  string cartId = 4;
+}
+message AddStockResponse {
+  bool status = 1;
+}
+message DeductStockResponse {
+  bool status = 1;
+}
+service CheckStockService {
+  rpc checkStock(CheckStockRequest) returns (CheckStockResponse);
+}
+
+service StockService {
+  rpc AddStock(AddStockRequest) returns (AddStockResponse);
+  rpc DeductStock(DeductStockRequest) returns (DeductStockResponse);
+  rpc GetAllStock(GetAllStockRequest) returns (GetAllStockResponse);
+}

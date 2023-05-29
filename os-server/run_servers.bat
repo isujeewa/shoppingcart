@@ -1,0 +1,3 @@
+start cmd /k java -jar "C:\Users\sujeewae\Documents\MSC\Distributed computing & concurrent\CW2\w1956493\Online Shopping Solution code\os-server\target\os-server-1.0.1-jar-with-dependencies.jar" StockServer01 localhost 11121
+start cmd /k java -jar "C:\Users\sujeewae\Documents\MSC\Distributed computing & concurrent\CW2\w1956493\Online Shopping Solution code\os-server\target\os-server-1.0.1-jar-with-dependencies.jar" StockServer02 localhost 11122
+start cmd /k java -jar "C:\Users\sujeewae\Documents\MSC\Distributed computing & concurrent\CW2\w1956493\Online Shopping Solution code\os-server\target\os-server-1.0.1-jar-with-dependencies.jar" StockServer03 localhost 11123
